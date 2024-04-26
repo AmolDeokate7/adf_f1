@@ -1,0 +1,47 @@
+{
+	"name": "deletepipeline2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Delete1",
+				"type": "Delete",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "filesdeleted",
+						"value": "all csv files in output folder of adfdemo container"
+					}
+				],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "Binary1",
+						"type": "DatasetReference"
+					},
+					"logStorageSettings": {
+						"linkedServiceName": {
+							"referenceName": "linkedservice_pravin",
+							"type": "LinkedServiceReference"
+						},
+						"path": "adfdemo/adfdemo"
+					},
+					"enableLogging": true,
+					"storeSettings": {
+						"type": "AzureBlobStorageReadSettings",
+						"recursive": false,
+						"enablePartitionDiscovery": false
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-04-26T05:21:06Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

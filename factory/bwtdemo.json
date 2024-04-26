@@ -1,0 +1,9 @@
+{
+	"name": "bwtdemo",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "71124bcf-a755-4adc-b46a-687a04a999bf",
+		"tenantId": "959f2f73-0d37-4da0-80bf-6c98a71a58d1"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "d1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedservice_pravin",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "output.csv",
+				"folderPath": "adfdemo",
+				"container": "adfdemo"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
