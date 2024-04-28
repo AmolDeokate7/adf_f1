@@ -57,7 +57,7 @@
 								"type": "Expression"
 							},
 							"ds_folder_path": {
-								"value": "@concat('bronze/',pipeline().parameters.pl_param_file_name,formatDateTime(utcnow(),'dd-MON-YY'))",
+								"value": "@concat('bronze/',pipeline().parameters.pl_param_file_name,'/',formatDateTime(utcnow(),'ddMMMyy'))",
 								"type": "Expression"
 							}
 						}

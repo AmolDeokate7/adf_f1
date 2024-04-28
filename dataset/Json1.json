@@ -1,0 +1,20 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_testt1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "seasons.json",
+				"folderPath": "bronze/seasons/28Apr24",
+				"fileSystem": "test1"
+			}
+		},
+		"schema": {}
+	}
+}
