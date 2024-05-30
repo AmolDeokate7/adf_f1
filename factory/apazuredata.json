@@ -1,0 +1,9 @@
+{
+	"name": "apazuredata",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "98569a70-17bb-4127-b380-6b1b766acfbc",
+		"tenantId": "6d067b2c-8371-411c-8dcb-a56ddcf1bbc4"
+	}
+}
